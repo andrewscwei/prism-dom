@@ -1,0 +1,24 @@
+{
+  "name": "prism-dom",
+  "version": "0.1.0",
+  "description": "Prism.js syntax highlighter for HTML strings",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewscwei/prism-dom.git"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"No tests yet... :)\""
+  },
+  "author": "Andrew Wei",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.5.0",
+    "chalk": "^2.1.0",
+    "jsdom": "^11.2.0",
+    "prismjs": "^1.6.0"
+  }
+}
