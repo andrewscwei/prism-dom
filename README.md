@@ -6,15 +6,21 @@ Syntax highlights an entire HTML string using [Prism.js](http://prismjs.com/).
 
 ```js
 /**
+ * Parses an HTML string and syntax highlights all code blocks using Prism.js.
+ *
  * @param {String} htmlString - HTML string to process.
  * @param {Object} [options] - Additional options.
- * @param {String} [options.defaultLanguage='markup'] - Fallback language for code blocks.
- * @param {Boolean} [options.lineNumbers=true] - Specifies whether line numbers should show.
- * @param {Boolean} [options.showLanguage=false] - Specifies whether the language should show.
- * @param {Function} done - Method invoked when syntax highlighting completes. It will be 
- *                          invoked with the output HTML string as its only param.
+ * @param {String} [options.defaultLanguage='markup'] - Fallback language for 
+ *                                                      code blocks.
+ * @param {Boolean} [options.lineNumbers=true] - Specifies whether line numbers 
+ *                                               should show.
+ * @param {Boolean} [options.showLanguage=false] - Specifies whether the 
+ *                                                 language label should show.
+ *
+ * @return {Promise<String>} - Promise with the output HTML as the fulfillment
+ *                             value.
  */
-function prismDOM(htmlString, options, done)
+function prismDOM(htmlString, options)
 ```
 
 ## Usage
@@ -30,7 +36,7 @@ Example:
 ```js
 const prismDOM = require('prism-dom');
 
-prismDOM(`<some_html>`, {}, (htmlString) => {
+prismDOM(`<some_html>`, {}).then(htmlString => {
   // The output HTML string with all code elements syntax highlighted.
   console.log(htmlString);
 });
