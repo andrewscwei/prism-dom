@@ -25,6 +25,10 @@ function prismDOM(htmlString, options)
 
 ## Usage
 
+```sh
+$ npm install prism-dom
+```
+
 This module crawls the HTML string for two elements:
 1. `<code>` elements with `class` set to `language-<programming_language>`, i.e. `<code class='language-javascript'>`. You can also use `lang-` for short in place of `language`.
 2. `<code>` elements whose direct parent element has its `class` set to `language-<programming_language>`, i.e. `<code class='language-javascript'>`. You can also use `lang-` for short in place of `language`.
