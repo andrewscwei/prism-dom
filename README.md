@@ -1,4 +1,4 @@
-# prism-dom [![Circle CI](https://circleci.com/gh/andrewscwei/prism-dom/tree/master.svg?style=svg)](https://circleci.com/gh/andrewscwei/prism-dom/tree/master) [![npm version](https://badge.fury.io/js/prism-dom.svg)](https://badge.fury.io/js/prism-dom)
+# Prism DOM ![](https://img.shields.io/maintenance/no/2017) [![](https://img.shields.io/github/license/andrewscwei/prism-dom)](https://github.com/andrewscwei/prism-dom/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/prism-dom.svg)](https://www.npmjs.com/package/prism-dom) [![CircleCI](https://img.shields.io/circleci/build/github/andrewscwei/prism-dom.svg)](https://circleci.com/gh/andrewscwei/prism-dom)
 
 Syntax highlights an entire HTML string using [Prism.js](http://prismjs.com/).
 
@@ -10,11 +10,11 @@ Syntax highlights an entire HTML string using [Prism.js](http://prismjs.com/).
  *
  * @param {String} htmlString - HTML string to process.
  * @param {Object} [options] - Additional options.
- * @param {String} [options.defaultLanguage='markup'] - Fallback language for 
+ * @param {String} [options.defaultLanguage='markup'] - Fallback language for
  *                                                      code blocks.
- * @param {Boolean} [options.lineNumbers=true] - Specifies whether line numbers 
+ * @param {Boolean} [options.lineNumbers=true] - Specifies whether line numbers
  *                                               should show.
- * @param {Boolean} [options.showLanguage=false] - Specifies whether the 
+ * @param {Boolean} [options.showLanguage=false] - Specifies whether the
  *                                                 language label should show.
  *
  * @return {Promise<String>} - Promise with the output HTML as the fulfillment

@@ -1,6 +1,6 @@
 {
   "name": "prism-dom",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Prism.js syntax highlighter for HTML strings",
   "main": "index.js",
   "repository": {
@@ -11,14 +11,20 @@
     "index.js"
   ],
   "scripts": {
-    "test": "echo \"No tests yet... :)\""
+    "test": "mocha --exit --recursive --reporter spec tests",
+    "lint": "eslint . --ignore-path .gitignore",
+    "lint:fix": "npm run lint -- --fix"
   },
   "author": "Andrew Wei",
   "license": "MIT",
   "dependencies": {
-    "async": "^2.5.0",
-    "chalk": "^2.1.0",
-    "jsdom": "^11.2.0",
-    "prismjs": "^1.6.0"
+    "async": "^3.1.0",
+    "chalk": "^2.4.2",
+    "jsdom": "^15.1.1",
+    "prismjs": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "mocha": "^6.2.0"
   }
 }
