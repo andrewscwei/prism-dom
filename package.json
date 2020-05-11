@@ -1,6 +1,6 @@
 {
   "name": "prism-dom",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Prism.js syntax highlighter for HTML strings",
   "main": "index.js",
   "repository": {
