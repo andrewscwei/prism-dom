@@ -1,4 +1,4 @@
-# Prism DOM ![](https://img.shields.io/maintenance/no/2017) [![](https://img.shields.io/github/license/andrewscwei/prism-dom)](https://github.com/andrewscwei/prism-dom/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/prism-dom.svg)](https://www.npmjs.com/package/prism-dom) [![CircleCI](https://img.shields.io/circleci/build/github/andrewscwei/prism-dom.svg)](https://circleci.com/gh/andrewscwei/prism-dom)
+# Prism DOM [![npm](https://img.shields.io/npm/v/prism-dom.svg)](https://www.npmjs.com/package/prism-dom) [![CI](https://github.com/andrewscwei/prism-dom/workflows/CI/badge.svg)](https://github.com/andrewscwei/prism-dom/actions?query=workflow%3ACI) [![CD](https://github.com/andrewscwei/prism-dom/workflows/CD/badge.svg)](https://github.com/andrewscwei/prism-dom/actions?query=workflow%3ACD)
 
 Syntax highlights an entire HTML string using [Prism.js](http://prismjs.com/).
 
